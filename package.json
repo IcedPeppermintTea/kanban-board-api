@@ -1,0 +1,27 @@
+{
+  "name": "kanban-board-api",
+  "version": "1.0.0",
+  "description": "Api codebase for Kanban Board",
+  "homepage": "https://github.com/IcedPeppermintTea/kanban-board-api#readme",
+  "bugs": {
+    "url": "https://github.com/IcedPeppermintTea/kanban-board-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IcedPeppermintTea/kanban-board-api.git"
+  },
+  "license": "ISC",
+  "author": "IcedPeppermintTea",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
