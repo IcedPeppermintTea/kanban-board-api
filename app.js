@@ -1,11 +1,12 @@
 import express from "express";
 import db from "./db.js";
 import cors from "cors";
+import "dotenv/config";
 
 const app = express();
 
 app.use(express.json()); // parse requests with Content-Type of application/json
-app.use(cors({ origin: "http://localhost:5173" })); // only accept requests from kanban ui
+app.use(cors({ origin: process.env.CLIENT_ORIGIN }));
 
 const port = 3000;
 
