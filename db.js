@@ -5,7 +5,8 @@ Handles creating and opening the kanban database
 
 import Database from "better-sqlite3";
 
-const db = new Database("kanban.db");
+const dbPath = process.env.DB_PATH || "kanban.db";
+const db = new Database(dbPath);
 
 db.exec(`
   CREATE TABLE IF NOT EXISTS tasks (
